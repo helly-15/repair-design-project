@@ -1,0 +1,110 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 57px;
+  width: 100%;
+  background-color: black;
+}
+
+.header_logo h1 {
+  font-family: FuturaDemiC;
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: uppercase;
+  left: 4.8%;
+  right: 48.27%;
+  top: 0.26%;
+  bottom: 99.62%;
+  color: #E3B873;
+}
+
+.header_navbar {
+  display: none;
+}
+
+.header_button {
+  display: none;
+}
+
+.calculate-cost {
+  height: 476px;
+  background-color: black;
+  width: 375px;
+  position: relative;
+}
+
+.calculate-cost_title {
+  position: absolute;
+  top: 17.9%;
+  left: 4.8%;
+  font-family: Yeseva One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 23px;
+  line-height: 132.83%;
+  /* or 31px */
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.calculate-cost_title span {
+  color: #E3B873;
+}
+
+.calculate-cost_img {
+  position: absolute;
+  display: block;
+  margin: 0 auto;
+  max-width: 375px;
+  height: 476px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.calculate-cost_text {
+  position: absolute;
+  left: 4.8%;
+  top: 33.7%;
+  font-family: FuturaBookC;
+  font-size: 18px;
+  line-height: 135.84%;
+  /* or 24px */
+  color: #FFFFFF;
+}
+
+.completed-projects {
+  height: 725px;
+  background-color: black;
+}
+
+.completed-projects_title {
+  font-family: Yeseva One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 138.6%;
+  /* or 30px */
+  text-align: center;
+  letter-spacing: -0.07em;
+  text-transform: uppercase;
+  color: #E3B873;
+}
+
+.completed-projects_description {
+  font-family: FuturaBookC;
+  font-size: 14px;
+  line-height: 158.48%;
+  /* or 22px */
+  text-align: center;
+  color: #FFFFFF;
+}
+/*# sourceMappingURL=main.css.map */
