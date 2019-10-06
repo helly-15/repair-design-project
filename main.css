@@ -1,8 +1,3 @@
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -33,6 +28,39 @@
 
 .header_button {
   display: none;
+}
+
+@media only screen and (min-width: 900px) {
+  .header {
+    height: 80px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .header_logo h1 {
+    font-size: 14px;
+    line-height: 16px;
+    margin-left: 5.55%;
+  }
+  .header_navbar {
+    font-family: FuturaBookC;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .header_navbar ul {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
 }
 
 .calculate-cost {
@@ -105,6 +133,149 @@
   line-height: 158.48%;
   /* or 22px */
   text-align: center;
+  color: #FFFFFF;
+}
+
+.completed-projects_columns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.completed-projects_columns .finished-work h2 {
+  font-family: Yeseva One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 138.6%;
+  /* identical to box height, or 19px */
+  text-transform: uppercase;
+  color: #E3B873;
+}
+
+.completed-projects_columns .finished-work h3 {
+  font-family: FuturaBookC;
+  font-size: 14px;
+  line-height: 19px;
+  color: #FFFFFF;
+}
+
+.control {
+  height: 540px;
+  background-color: black;
+  display: block;
+}
+
+.control_title {
+  font-family: Yeseva One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 138.6%;
+  /* or 30px */
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.control_article {
+  font-family: FuturaBookC;
+  font-size: 14px;
+  line-height: 169.8%;
+  /* or 24px */
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.form {
+  height: 260px;
+  background: black;
+}
+
+.button {
+  height: 50px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, black), color-stop(50%, white));
+  background: linear-gradient(180deg, black 50%, white 50%);
+  position: relative;
+}
+
+.button_button {
+  width: 91%;
+  margin: 0 auto;
+  height: 100%;
+  background-color: #E3B873;
+  position: absolute;
+  left: 4.6%;
+}
+
+.examples {
+  background: #FFFFFF;
+  height: 1795px;
+  display: block;
+}
+
+.examples_title {
+  margin-top: 3.3%;
+  font-family: Yeseva One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 138.6%;
+  /* or 30px */
+  text-align: center;
+  text-transform: uppercase;
+  color: #181818;
+}
+
+.examples_hammer {
+  margin: 0 auto;
+}
+
+.examples_block-of-pictures {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.examples_pic {
+  height: 485px;
+  position: relative;
+}
+
+.examples_picture {
+  height: 365px;
+  margin: 0 4.6%;
+}
+
+.examples_details {
+  position: absolute;
+  height: 241px;
+  top: 220px;
+  left: 4.6%;
+  background: #FFFFFF;
+}
+
+.examples_price {
+  position: absolute;
+  bottom: 12%;
+  left: 4.6%;
+  width: 50%;
+  background-color: #E3B873;
+  font-family: Yeseva One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 138.6%;
+  /* or 21px */
+  text-transform: uppercase;
   color: #FFFFFF;
 }
 /*# sourceMappingURL=main.css.map */
