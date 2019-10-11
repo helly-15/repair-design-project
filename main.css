@@ -638,4 +638,128 @@
   padding-top: 14px;
   padding-left: 10%;
 }
+
+.team {
+  background-color: black;
+}
+
+.team_description h2 {
+  font-family: Yeseva One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 138.6%;
+  /* or 30px */
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+}
+
+.team_description h3 {
+  margin: 23px 4.5% 39px 4.5%;
+  font-family: FuturaBookC;
+  font-size: 15px;
+  line-height: 135.84%;
+  text-align: center;
+  color: #FFFFFF;
+  padding-left: 6%;
+  padding-right: 6%;
+}
+
+.team_description img {
+  padding-left: 45%;
+  padding-right: 45%;
+  width: 8.8%;
+  height: 28px;
+  height: 29px;
+  width: 7.7%;
+  padding-top: 20px;
+}
+
+.team_photo {
+  padding-left: 5%;
+  width: 90%;
+  height: 450px;
+  padding-bottom: 55px;
+}
+
+.questions {
+  background-color: black;
+  padding-top: 60px;
+  color: white;
+}
+
+.questions_title {
+  font-family: Yeseva One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 138.6%;
+  /* or 30px */
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.questions input {
+  margin-bottom: 60px;
+}
+
+.questions div {
+  font-family: FuturaBookC;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.questions_button {
+  width: 90%;
+  margin: 0 5% 0 5%;
+  height: 51px;
+  background-color: #E3B873;
+  font-family: FuturaDemiC;
+  font-size: 15px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding-left: 5%;
+}
+
+.map {
+  background-color: black;
+}
+
+.map_img {
+  padding: 0 5% 9.5% 5%;
+  width: 90%;
+  height: 242px;
+  position: relative;
+  padding-top: 50px;
+}
+
+.contacts-bottom {
+  background-color: black;
+  font-family: Yeseva One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 138.6%;
+  /* or 30px */
+  text-align: center;
+  text-transform: uppercase;
+  color: #E3B873;
+}
+
+.contacts-bottom_telephone {
+  color: #E3B873;
+}
+
+.insta {
+  background-color: black;
+}
+
+.insta_icon {
+  padding: 25px 0 38px 37%;
+  height: 39px;
+  width: 26%;
+}
 /*# sourceMappingURL=main.css.map */

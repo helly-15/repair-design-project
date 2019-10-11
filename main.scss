@@ -512,5 +512,94 @@ text-transform: uppercase;
         padding-left: 10%;
     }
 }
+.team{
+    background-color: black;
+    &_description {
+        h2{
+        @include textTitle();
+        color: white;
+        }
+        h3{
+            margin: 23px 4.5% 39px 4.5%;
+            font-family: FuturaBookC;
+            font-size: 15px;
+            line-height: 135.84%;
+            text-align: center;
+            color: #FFFFFF;
+            padding-left: 6%;
+            padding-right: 6%;
+
+        }
+        img{
+            @include icons();
+            height: 29px;
+            width: 7.7%;
+            padding-top: 20px;
+        }
+        
+    }
+    &_photo{
+        padding-left: 5%;
+        width: 90%;
+        height: 450px;
+        padding-bottom: 55px;
+    }
+
+}
+.questions{
+    background-color: black;
+    padding-top:60px;
+    color: white;
+    &_title{
+        @include textTitle();
+        
+    }
+    input{
+        margin-bottom: 60px;
+    }
+    div{
+        font-family: FuturaBookC;
+        font-size: 16px;
+        line-height: 22px;
+    }
+    &_button{
+        width: 90%;
+        margin: 0 5% 0 5%;; 
+            height: 51px;
+            background-color: #E3B873;
+            font-family: FuturaDemiC;
+            font-size: 15px;
+            line-height: 26px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            padding-left: 5%;
+    }
+}
+.map{
+    background-color: black;
+    &_img {
+        @include centrPicture();
+        padding-top:50px;
+    }
+
+}
+
+.contacts-bottom {
+    background-color: black;
+    @include textTitle();
+    color: $yellowish;
+    &_telephone{
+        color: $yellowish;
+    }
+}
+.insta{
+    background-color: black;
+    &_icon{
+        padding: 25px 0 38px 37%;
+        height: 39px;
+        width: 26%;
+    }
+}
 
 
