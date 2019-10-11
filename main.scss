@@ -1,0 +1,516 @@
+@import "abstract/variables";
+@import "fonts/fonts";
+@mixin textWhite(){
+    text-transform: uppercase;
+    text-align: center;
+    color: #FFFFFF;
+}
+@mixin textYellow {
+    text-transform: uppercase;
+    text-align: center;
+    color: $yellowish;
+}
+@mixin icons {
+    padding-left:45% ;
+    padding-right: 45%;
+    width: 8.8%;
+    height: 28px;
+}
+@mixin centrPicture {
+    padding:0 5% 9.5% 5%;
+    width: 90%;
+    height: 242px;
+    position: relative;
+}
+@mixin textTitle {
+font-family: Yeseva One;
+font-style: normal;
+font-weight: normal;
+font-size: 22px;
+line-height: 138.6%;
+/* or 30px */
+text-align: center;
+text-transform: uppercase;
+}
+
+  .header{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 57px;
+      width: 100%;
+      background-color: black;
+      &_logo h1{
+        font-family: FuturaDemiC;
+        font-size: 0.75em;
+        line-height: 14px;
+        @include textYellow();
+        left: 4.8%;
+        right: 48.27%;
+        top: 0.26%;
+        bottom: 99.62%;
+        
+      }
+     &_telephone a{
+        font-family: FuturaDemiC;
+        font-size: 0.75em;
+        line-height: 14px;
+        text-align: right;
+        color: #FFFFFF;
+        }
+      
+      &_navbar{
+          display: none;
+      }
+      &_button{
+          display: none;
+      }
+      @media only screen  and (min-width : 1440px){
+          height: 80px;
+          justify-content: space-around;
+          &_logo h1{
+            font-size: 14px;
+            line-height: 16px;
+            margin-left: 5.55%;
+          }
+          &_navbar {
+            font-family: FuturaBookC;
+            font-size: 14px;
+            line-height: 16px;
+            @include textWhite();
+            display: flex;
+           ul{
+               flex-direction: row;
+               justify-content: space-around;
+           } 
+          }
+
+      }
+
+  }
+  .calculate-cost{
+      height: 476px;
+      background-color: black;
+      width: 100%;
+      position: relative;
+      
+
+      &_title{
+        position: absolute;
+        top:17.9%;
+        left:4.8%;    
+        @include textTitle();
+        color: white;
+        span{ 
+            color: $yellowish};
+        }
+        &_img{
+            display: block;
+            margin: 0 auto;
+            width: 100%;
+            height: 476px;
+            object-fit: cover;
+        }
+        &_img_gray{
+            opacity: 0.7 ;
+            position: absolute;
+            top: 0%;
+            left    : 0%;
+            margin: 0 auto;
+            width: 100%;
+            height: 476px;
+            object-fit: cover;
+            
+        }
+        &_text{
+            position: absolute;
+            left: 4.8%;
+            top: 33.7%;
+            font-family: FuturaBookC;
+            font-size: 1.123em;
+            line-height: 135.84%;
+            /* or 24px */
+            color: #FFFFFF;
+            width: 59%;
+        }
+        &_button{
+            width: 90%;
+            height: 51px;
+            background-color: $yellowish;
+            position: absolute;
+            top: 62.4%;
+            left: 5%;
+            font-family: FuturaDemiC;
+            font-size: 13px;
+            line-height: 15px;
+            @include textWhite();
+        }
+        &_application{
+            width: 90%;
+            height: 51px;
+            font-family: FuturaDemiC;
+            font-size: 13px;
+            line-height: 15px;
+            @include textWhite();
+            border: 1px solid #FFFFFF;
+            box-sizing: border-box;
+            background-color: rgba(0, 0, 0, 0);
+            position: absolute;
+            top: 364px;
+            left: 5%;
+        }
+      
+  }
+  .completed-projects{
+      height: 725px;
+      background-color: black;
+      
+      &_title{
+        @include textTitle();
+        letter-spacing: -0.07em;
+        @include textYellow();
+        padding: 36px 33.6% 22px 32.5%;
+        width: 33.3%;
+      }
+      &_description{
+        font-family: FuturaBookC;
+        font-size: 14px;
+        line-height: 158.48%;
+        /* or 22px */
+        width:83%;
+        text-align: center;
+        padding: 0 8.5% 35px 8.5%;
+        color: #FFFFFF;
+      }
+      &_img{
+          @include centrPicture();
+      }
+      &_arrow{
+          position: absolute;
+          top: 860px;
+          left: 8.5%;   
+      }
+      &_arrow_2{
+        position: absolute;
+        top: 860px;
+        right: 8.5%;
+      }
+      &_columns{
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-around;
+       .finished-work{
+           width: 24.6%;
+           padding: 0 16% 7.4% 8.5%;
+            h2{
+                font-family: Yeseva One;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 138.6%;
+                /* identical to box height, or 19px */
+                text-transform: uppercase;
+                color: #E3B873;
+
+            }
+            h3{
+                font-family: FuturaBookC;
+                font-size: 14px;
+                line-height: 19px;
+                color: #FFFFFF;
+
+            }
+       }   
+      }
+
+    }
+    .control{
+        height: 540px;
+        background-color: black;
+        display: block;
+        &_title{
+            @include textTitle();
+            color: #FFFFFF;
+        }
+        &_camera{
+            @include icons();
+            padding: 20px 45% 40px 45%;
+        }
+        &_article{
+            font-family: FuturaBookC;
+            font-size: 14px;
+            line-height: 169.8%;
+            /* or 24px */
+            text-align: center;
+            color: #FFFFFF;
+            padding: 0 4.5% 0 4.5%;
+        }
+        iframe{
+            width: 90%;
+             height: 207px;
+             padding: 0 4.5% 50px 4.5%;
+             
+        }
+    }
+.form{
+    height: 260px;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    font-family: FuturaBookC;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+    :nth-child(3){
+        padding-top: 40px; 
+    }
+    
+    
+    &_label{
+        margin-left: 4.5%;
+        font-family: FuturaBookC;
+        font-size: 15px;
+        line-height: 20px;
+        color: rgba(255, 255, 255, 0.5);
+        
+    }
+    
+    &_input{
+        width: 90%;
+        box-sizing: border-box;
+        border: none;
+        background-color: black;
+        border-bottom: 2px solid white;
+        margin-left: 4.5%;
+        color:white;
+        font-family: FuturaBookC;
+        font-size: 18px;
+        line-height: 138.72%;
+        
+    }
+    &_checkbox{
+       padding-left: 4.5%;
+    }
+}
+
+.button{
+        height:50px;   
+        background: linear-gradient(180deg,black 50%, white 50%);
+        position: relative;
+        
+        &_button{
+            width: 91%;
+            margin: 0 auto; 
+            height: 100%;
+            background-color: #E3B873;
+            position: absolute;
+            left: 4.6%;
+            font-family: FuturaDemiC;
+            font-size: 15px;
+            line-height: 26px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #FFFFFF;
+        }
+    }
+.examples{
+    background: #FFFFFF;
+    height: 1730px;
+    display: block;
+
+    &_title{
+        margin-top: 57px;
+        @include textTitle();
+        color: #181818;
+    }
+    &_hammer{
+        @include icons();
+        padding-top: 17px;
+           
+    }
+    &_block-of-pictures{
+        display: flex;
+        flex-direction: column;
+    
+    }
+    &_pic{
+        height: 485px;
+        width: 90%;
+        position: relative;
+        padding-top: 60px;
+    }
+    &_picture{
+        height: 365px;
+        margin: 0 4.6%;
+        width: 100%;
+        
+    }
+    
+    &_details{
+        padding-left: 8%;
+        position: absolute;
+        height: 241px;
+        top:220px;
+        left: 4.6%;
+        background: #FFFFFF;
+        background-color: white;
+        height: 240px;
+        width: 72%;
+        font-family: FuturaBookC;
+        font-size: 13px;
+        line-height: 169.8%;
+        /* or 22px */
+        color: #959595;
+        li{
+            list-style-type: circle;
+        }
+        h3{
+            font-family: Yeseva One;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 15px;
+            line-height: 138.6%;
+            /* identical to box height, or 21px */
+            color: #363636;
+            padding-top: 21px;
+            padding-bottom: 10px;
+        }
+    }
+    &_price{
+        position: absolute;
+        bottom: 8%;
+        left: 4.6%;
+        width: 50%;
+        background-color: #E3B873;
+        font-family: Yeseva One;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 138.6%;
+        /* or 21px */
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin-top: 17px;
+        height: 40px;
+        align-content: center;
+        padding-top: 14px;
+        padding-left: 10%;
+    }
+}
+.fantasies{
+    @include textTitle();
+    @include textYellow();
+    position: relative;
+    height: 377px;
+    
+    &_title{
+        background-color: white;
+        width: 90%;
+        padding-left: 5%;
+        height: 66px;
+        padding-bottom: 24px;
+    }
+    &_slider{
+        background: linear-gradient(180deg, white 50%,black 50%);
+        @include centrPicture();
+    }
+     &_arrow{
+        position: absolute;
+        top: 205px;
+        left: 8.5%;   
+    }
+    &_arrow_2{
+        position: absolute;
+        top: 205px;
+        right: 8.5%;
+      }
+}
+.project{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    &_title{
+        @include textTitle();
+        color: white;
+    }
+    &_pen{
+        @include icons();
+        width: 7.5%;
+        padding-top: 25px;
+    }
+    &_article{
+        margin: 23px 4.5% 39px 4.5%;
+        font-family: FuturaBookC;
+        font-size: 15px;
+        line-height: 135.84%;
+        text-align: center;
+        color: #FFFFFF;
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+    &_pic{
+        height: 485px;
+        width: 90%;
+        position: relative;
+        padding-top: 60px;
+    }
+    &_picture{
+        height: 365px;
+        margin: 0 4.6%;
+        width: 100%;
+        
+    }
+    
+    &_details{
+        padding-left: 8%;
+        position: absolute;
+        height: 241px;
+        top:220px;
+        left: 4.6%;
+        background: #FFFFFF;
+        background-color: white;
+        height: 240px;
+        width: 72%;
+        font-family: FuturaBookC;
+        font-size: 13px;
+        line-height: 169.8%;
+        /* or 22px */
+        color: #959595;
+        li{
+            list-style-type: circle;
+        }
+        h3{
+            font-family: Yeseva One;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 15px;
+            line-height: 138.6%;
+            /* identical to box height, or 21px */
+            color: #363636;
+            padding-top: 21px;
+            padding-bottom: 10px;
+        }
+    }
+    &_price{
+        position: absolute;
+        bottom: 8%;
+        left: 4.6%;
+        width: 50%;
+        background-color: #E3B873;
+        font-family: Yeseva One;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 138.6%;
+        /* or 21px */
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin-top: 17px;
+        height: 40px;
+        align-content: center;
+        padding-top: 14px;
+        padding-left: 10%;
+    }
+}
+
+
