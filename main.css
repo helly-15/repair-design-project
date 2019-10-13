@@ -605,9 +605,20 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    position: relative;
   }
-  .form :nth-child(3) {
+  .form :nth-child(1) {
     padding-top: 0;
+  }
+  .form .label_1 {
+    position: absolute;
+    top: -9px;
+    left: 33vw;
+  }
+  .form .label_2 {
+    position: absolute;
+    top: -48px;
+    left: 50vw;
   }
   .form_label {
     margin-left: 0;
@@ -626,6 +637,9 @@
   }
   .form_checkbox {
     padding-left: 0;
+    position: absolute;
+    left: 40vw;
+    top: 175px;
   }
 }
 
@@ -649,6 +663,20 @@
   text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
+}
+
+@media screen and (min-width: 800px) {
+  .button {
+    height: 50px;
+    background: white;
+    position: relative;
+  }
+  .button_button {
+    width: 14vw;
+    margin: 0;
+    left: 66vw;
+    top: -341px;
+  }
 }
 
 .examples {
@@ -754,6 +782,171 @@
       align-content: center;
   padding-top: 14px;
   padding-left: 10%;
+}
+
+@media screen and (min-width: 800px) {
+  .examples {
+    height: 830px;
+  }
+  .examples_block-of-pictures {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-left: 4.8vw;
+  }
+  .examples_pic {
+    height: 608px;
+    width: 27vw;
+    position: relative;
+    padding-top: 60px;
+    padding-left: 2vw;
+  }
+  .examples_picture {
+    height: 421px;
+    margin: 0 2vw 0 0;
+    width: 100%;
+  }
+  .examples_details {
+    padding-left: 8%;
+    position: absolute;
+    height: 286px;
+    top: 294px;
+    width: 23vw;
+    font-size: 15px;
+  }
+  .examples_details h3 {
+    font-size: 18px;
+    padding-top: 25px;
+  }
+  .examples_price {
+    width: 15.8vw;
+    font-size: 18px;
+    margin-top: 0px;
+    height: 54px;
+    padding-top: 17px;
+    padding-left: 1.5vw;
+  }
+}
+
+.measurements {
+  display: none;
+}
+
+@media screen and (min-width: 800px) {
+  .measurements {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+  }
+  .measurements_house {
+    width: 30vw;
+    height: 700px;
+    background-image: url(assets/house.png);
+    background-size: cover;
+  }
+  .measurements_house-circle {
+    width: 35vw;
+    height: 700px;
+    border-radius: 50%;
+    background-image: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(20%, transparent), color-stop(20%, transparent), to(#E3B873));
+    background-image: linear-gradient(to right, transparent 0%, transparent 20%, transparent 20%, #E3B873 100%);
+    -webkit-mask-image: radial-gradient(circle at center, transparent 70%, white 68%);
+            mask-image: radial-gradient(circle at center, transparent 70%, white 68%);
+    position: absolute;
+  }
+  .measurements_list {
+    font-family: FuturaDemic;
+    font-size: 18px;
+    line-height: 21px;
+    position: absolute;
+  }
+  .measurements_list_01 {
+    position: absolute;
+    top: 117px;
+    left: 33vw;
+    width: 25vw;
+  }
+  .measurements_list_02 {
+    position: absolute;
+    top: 238px;
+    left: 36vw;
+    width: 7vw;
+  }
+  .measurements_list_03 {
+    position: absolute;
+    top: 400px;
+    left: 36vw;
+    width: 7vw;
+  }
+  .measurements_form {
+    height: 510px;
+    width: 35vw;
+    background: black;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    font-family: FuturaBookC;
+    font-size: 20px;
+    line-height: 25px;
+    color: #FFFFFF;
+    margin-left: 24.2vw;
+    margin-top: 100px;
+    text-align: center;
+    padding-top: 28px;
+  }
+  .measurements_form :nth-child(3) {
+    padding-top: 0;
+  }
+  .measurements_form_label {
+    margin-left: 4.5%;
+    font-family: FuturaBookC;
+    font-size: 15px;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 0.5);
+    text-align: left;
+    padding-top: 39px;
+  }
+  .measurements_form_input {
+    width: 90%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border: none;
+    background-color: black;
+    border-bottom: 2px solid white;
+    margin-left: 4.5%;
+    color: white;
+    font-family: FuturaBookC;
+    font-size: 18px;
+    line-height: 138.72%;
+  }
+  .measurements_form_checkbox {
+    padding-left: 4.5%;
+    text-align: left;
+    padding-top: 50px;
+  }
+  .measurements_form_button {
+    display: block;
+    width: 14vw;
+    height: 50px;
+    background-color: #E3B873;
+    margin-left: 19vw;
+    font-family: FuturaDemiC;
+    font-size: 13px;
+    line-height: 15px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 50px;
+  }
 }
 
 .fantasies {

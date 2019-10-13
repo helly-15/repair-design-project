@@ -1,6 +1,8 @@
 # repair-design-project
-вы можете компилировать ваш Sass в CSS, используя команду sass. Вам всего лишь нужно сообщить Sass, где взять файл Sass и в какой файл CSS его скомпилировать. Например, запустив команду sass input.scss output.css в терминале, вы сообщаете Sass взять один Sass файл, input.scss, и скомпилировать в файл output.css.
 
-Также, вы можете следить за изменениями только определенных файлов или папок, используя флаг --watch. Данный флаг сообщает Sass, что необходимо следить за изменениями указанных файлов и при наличии таковых производить перекомпиляцию CSS после сохранения файлов. Если вы хотите отслеживать изменения (вместо ручной перекомпиляции) вашего файла, например, input.scss, то вам необходимо просто добавить флаг в команду:
+Hello!
+I would like to introduce my layout html/scss work called "repair design project"
+In the repository you will find .scss and .html files
+To compile SASS into CSS you need to install an extension to your Visual Studio Code called Life Sass Compiler and follow guideline
+Please, feel free to leave comments as it is my second layout only (Grazie!)
 
-sass –watch input.scss output.css
