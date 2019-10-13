@@ -1,0 +1,32 @@
+@mixin textWhite(){
+    text-transform: uppercase;
+    text-align: center;
+    color: #FFFFFF;
+}
+@mixin textYellow {
+    text-transform: uppercase;
+    text-align: center;
+    color: $yellowish;
+}
+@mixin icons {
+    padding-left:45% ;
+    padding-right: 45%;
+    width: 8.8%;
+    height: 28px;
+}
+@mixin centrPicture {
+    padding:0 5% 9.5% 5%;
+    width: 90%;
+    height: 242px;
+    position: relative;
+}
+@mixin textTitle {
+font-family: Yeseva One;
+font-style: normal;
+font-weight: normal;
+font-size: 22px;
+line-height: 138.6%;
+/* or 30px */
+text-align: center;
+text-transform: uppercase;
+}
