@@ -1,0 +1,80 @@
+.team{
+    background-color: black;
+    &_description {
+        h2{
+        @include textTitle();
+        color: white;
+        }
+        h3{
+            margin: 23px 4.5% 39px 4.5%;
+            font-family: FuturaBookC;
+            font-size: 15px;
+            line-height: 135.84%;
+            text-align: center;
+            color: #FFFFFF;
+            padding-left: 6%;
+            padding-right: 6%;
+
+        }
+        img{
+            @include icons();
+            height: 29px;
+            width: 7.7%;
+            padding-top: 20px;
+        }
+        
+    }
+    &_photo{
+        padding-left: 5%;
+        width: 90%;
+        height: 450px;
+        padding-bottom: 55px;
+    }
+    &_info{
+        display: none;
+    }
+    @media screen and (min-width : 800px){
+        background: linear-gradient(180deg,black 50%, white 50%);
+        height: 935px;
+    &_description {
+        padding-top: 60px;
+        h2{
+        @include textTitle();
+        color: white;
+        }
+        h3{
+            margin: 23px 30vw 39px 30vw;
+            font-size: 20px;
+
+        }
+        img{
+            @include icons();
+            height: 29px;
+            width: 2vw;
+            padding-top: 20px;
+            padding-left: 48%;
+        }
+        
+    }
+    &_phot{
+        display: flex;
+        flex-direction: row;
+    }
+    &_photo{
+        padding-left: 5%;
+        width: 90%;
+        height: 450px;
+        padding-bottom: 55px;
+    }
+    &_info{
+        font-family: FuturaBookC;
+        font-size: 20px;
+        line-height: 34px;
+        text-align: center;
+        width: 38.7vw;
+        padding-left: 30.6vw;
+        color: #363636; 
+        display: block;
+    }
+    }
+}

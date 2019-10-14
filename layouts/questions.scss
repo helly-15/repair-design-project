@@ -1,0 +1,81 @@
+.questions{
+    background-color: black;
+    padding-top:60px;
+    color: white;
+    &_title{
+        @include textTitle();
+        
+    }
+    input{
+        margin-bottom: 60px;
+    }
+    div{
+        font-family: FuturaBookC;
+        font-size: 16px;
+        line-height: 22px;
+    }
+    &_button{
+        width: 90%;
+        margin: 0 5% 0 5%;; 
+            height: 51px;
+            background-color: #E3B873;
+            font-family: FuturaDemiC;
+            font-size: 15px;
+            line-height: 26px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            padding-left: 5%;
+    }
+    @media screen and (min-width : 800px){
+        background: linear-gradient(180deg, white 50%,black 50%);
+        height: 445px;
+    padding-top:60px;
+    color: white;
+    &_form{
+        width: 61vw;
+        margin-left: 20vw;
+        background-color: black;
+    }
+    &_title{
+        padding-top: 20px;
+        @include textTitle();
+    }
+    input{
+        width: 18vw;
+        box-sizing: border-box;
+        border: none;
+        background-color: black;
+        border-bottom: 2px solid white;
+        margin-left: 4.5%;
+        color:white;
+        font-family: FuturaBookC;
+        font-size: 18px;
+        line-height: 138.72%;
+        margin-bottom: 60px;
+        padding-top: 20px;
+    }
+    div{
+        font-family: FuturaBookC;
+        font-size: 16px;
+        line-height: 22px;
+    }
+   
+    &_button{
+        width: 30%;
+        margin: 0 35% ; 
+            height: 51px;
+            background-color: #E3B873;
+            font-family: FuturaDemiC;
+            font-size: 15px;
+            line-height: 26px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            padding-left: 0;
+    }
+    #checkbox1{
+        display: none;
+    }
+    }
+}

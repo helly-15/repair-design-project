@@ -82,6 +82,10 @@
     width: 40vw;
     margin-left: 6.1vw;
   }
+  .header_navbar a {
+    color: #FFFFFF;
+    text-decoration: none;
+  }
   .header_navbar ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -110,6 +114,10 @@
     text-transform: uppercase;
     text-align: center;
     color: #FFFFFF;
+  }
+  .header_button a {
+    color: #FFFFFF;
+    text-decoration: none;
   }
 }
 
@@ -189,6 +197,7 @@
   text-transform: uppercase;
   text-align: center;
   color: #FFFFFF;
+  cursor: pointer;
 }
 
 .calculate-cost_application {
@@ -207,6 +216,7 @@
   position: absolute;
   top: 364px;
   left: 5%;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 800px) {
@@ -663,6 +673,7 @@
   text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 800px) {
@@ -962,7 +973,7 @@
   text-align: center;
   color: #E3B873;
   position: relative;
-  height: 377px;
+  height: 500px;
 }
 
 .fantasies_title {
@@ -1054,7 +1065,7 @@
     left: 0;
     top: 111px;
     height: 664px;
-    width: 100vw;
+    width: 98vw;
   }
   .fantasies_grey {
     display: block;
@@ -1062,7 +1073,7 @@
     left: 0;
     top: 111px;
     height: 664px;
-    width: 100vw;
+    width: 98vw;
     opacity: 0.9;
   }
   .fantasies_list {
@@ -1353,6 +1364,71 @@
   padding-bottom: 55px;
 }
 
+.team_info {
+  display: none;
+}
+
+@media screen and (min-width: 800px) {
+  .team {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, black), color-stop(50%, white));
+    background: linear-gradient(180deg, black 50%, white 50%);
+    height: 935px;
+  }
+  .team_description {
+    padding-top: 60px;
+  }
+  .team_description h2 {
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 138.6%;
+    /* or 30px */
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+  }
+  .team_description h3 {
+    margin: 23px 30vw 39px 30vw;
+    font-size: 20px;
+  }
+  .team_description img {
+    padding-left: 45%;
+    padding-right: 45%;
+    width: 8.8%;
+    height: 28px;
+    height: 29px;
+    width: 2vw;
+    padding-top: 20px;
+    padding-left: 48%;
+  }
+  .team_phot {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .team_photo {
+    padding-left: 5%;
+    width: 90%;
+    height: 450px;
+    padding-bottom: 55px;
+  }
+  .team_info {
+    font-family: FuturaBookC;
+    font-size: 20px;
+    line-height: 34px;
+    text-align: center;
+    width: 38.7vw;
+    padding-left: 30.6vw;
+    color: #363636;
+    display: block;
+  }
+}
+
 .questions {
   background-color: black;
   padding-top: 60px;
@@ -1394,6 +1470,68 @@
   padding-left: 5%;
 }
 
+@media screen and (min-width: 800px) {
+  .questions {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, white), color-stop(50%, black));
+    background: linear-gradient(180deg, white 50%, black 50%);
+    height: 445px;
+    padding-top: 60px;
+    color: white;
+  }
+  .questions_form {
+    width: 61vw;
+    margin-left: 20vw;
+    background-color: black;
+  }
+  .questions_title {
+    padding-top: 20px;
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 138.6%;
+    /* or 30px */
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .questions input {
+    width: 18vw;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border: none;
+    background-color: black;
+    border-bottom: 2px solid white;
+    margin-left: 4.5%;
+    color: white;
+    font-family: FuturaBookC;
+    font-size: 18px;
+    line-height: 138.72%;
+    margin-bottom: 60px;
+    padding-top: 20px;
+  }
+  .questions div {
+    font-family: FuturaBookC;
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .questions_button {
+    width: 30%;
+    margin: 0 35%;
+    height: 51px;
+    background-color: #E3B873;
+    font-family: FuturaDemiC;
+    font-size: 15px;
+    line-height: 26px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding-left: 0;
+  }
+  .questions #checkbox1 {
+    display: none;
+  }
+}
+
 .map {
   background-color: black;
 }
@@ -1404,6 +1542,22 @@
   height: 242px;
   position: relative;
   padding-top: 50px;
+}
+
+@media screen and (min-width: 800px) {
+  .map {
+    background-color: black;
+  }
+  .map_img {
+    padding: 0 5% 9.5% 5%;
+    width: 90%;
+    height: 242px;
+    position: relative;
+    padding-top: 50px;
+    height: 465px;
+    width: 64.2vw;
+    margin-left: 13vw;
+  }
 }
 
 .contacts-bottom {

@@ -44,12 +44,16 @@
           display: flex;
           width: 40vw;
           margin-left: 6.1vw;
-
+          a{
+            color: #FFFFFF;
+            text-decoration: none;
+          }
          ul {
              display: flex;    
          } 
          li{
             margin-right: 3.5vw;   
+            
          }
         }
         &_telephone a{
@@ -69,6 +73,10 @@
           font-size: 13px;
           line-height: 15px;
           @include textWhite();
+          a{
+            color: #FFFFFF;
+            text-decoration: none;
+          }
       }
 
     }
