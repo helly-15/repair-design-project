@@ -1,0 +1,103 @@
+.form {
+  height: 260px;
+  background: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: FuturaBookC;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+
+.form :nth-child(3) {
+  padding-top: 40px;
+}
+
+.form_label {
+  margin-left: 4.5%;
+  font-family: FuturaBookC;
+  font-size: 15px;
+  line-height: 20px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.form_input {
+  width: 90%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: none;
+  background-color: black;
+  border-bottom: 2px solid white;
+  margin-left: 4.5%;
+  color: white;
+  font-family: FuturaBookC;
+  font-size: 18px;
+  line-height: 138.72%;
+}
+
+.form_checkbox {
+  padding-left: 4.5%;
+}
+
+@media screen and (min-width: 800px) {
+  .form {
+    height: 342px;
+    background: white;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    font-family: FuturaBookC;
+    font-size: 18px;
+    line-height: 24px;
+    color: black;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: relative;
+  }
+  .form :nth-child(1) {
+    padding-top: 0;
+  }
+  .form .label_1 {
+    position: absolute;
+    top: -9px;
+    left: 33vw;
+  }
+  .form .label_2 {
+    position: absolute;
+    top: -48px;
+    left: 50vw;
+  }
+  .form_label {
+    margin-left: 0;
+    color: black;
+  }
+  .form_input {
+    width: 16.6vw;
+    background-color: white;
+    border-bottom: 2px solid black;
+    margin-left: 0;
+    color: black;
+    font-family: FuturaBookC;
+    font-size: 18px;
+    line-height: 20px;
+    height: 51px;
+  }
+  .form_checkbox {
+    padding-left: 0;
+    position: absolute;
+    left: 40vw;
+    top: 175px;
+  }
+}
+/*# sourceMappingURL=form.css.map */

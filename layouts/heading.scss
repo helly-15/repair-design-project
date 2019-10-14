@@ -1,0 +1,76 @@
+.header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 57px;
+    width: 100%;
+    background-color: black;
+    &_logo h1{
+      font-family: FuturaDemiC;
+      font-size: 0.75em;
+      line-height: 14px;
+      @include textYellow();
+     
+    }
+   &_telephone a{
+      font-family: FuturaDemiC;
+      font-size: 0.75em;
+      line-height: 14px;
+      text-align: right;
+      color: #FFFFFF;
+      }
+    
+    &_navbar{
+        display: none;
+    }
+    &_button{
+        display: none;
+    }
+    @media only screen  and (min-width : 800px){
+        height: 80px;
+        width: 100%;
+        justify-content: unset;
+        &_logo h1{
+          font-size: 14px;
+          line-height: 16px;
+          margin-left: 5.5vw;
+         width: 13vw;
+        }
+        &_navbar {
+          font-family: FuturaBookC;
+          font-size: 14px;
+          line-height: 16px;
+          @include textWhite();
+          display: flex;
+          width: 40vw;
+          margin-left: 6.1vw;
+
+         ul {
+             display: flex;    
+         } 
+         li{
+            margin-right: 3.5vw;   
+         }
+        }
+        &_telephone a{
+          margin-left: 4.8vw;
+          font-size: 14px;
+          line-height: 16px;
+          text-decoration-line: underline;
+          color: #E3B873;
+        }
+        &_button{
+          display: block;
+          width: 11vw;
+          height: 37px;
+          background-color: $yellowish;
+          margin-left: 3vw;
+          font-family: FuturaDemiC;
+          font-size: 13px;
+          line-height: 15px;
+          @include textWhite();
+      }
+
+    }
+
+}

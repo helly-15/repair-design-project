@@ -1,0 +1,33 @@
+.button{
+    height:50px;   
+    background: linear-gradient(180deg,black 50%, white 50%);
+    position: relative;
+    
+    &_button{
+        width: 91%;
+        margin: 0 auto; 
+        height: 100%;
+        background-color: #E3B873;
+        position: absolute;
+        left: 4.6%;
+        font-family: FuturaDemiC;
+        font-size: 15px;
+        line-height: 26px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+    @media screen and (min-width : 800px){
+        height:50px;   
+        background: white;
+        position: relative;
+        
+        &_button{
+            width: 14vw;
+            margin: 0; 
+            left: 66vw;
+            top:-341px;
+            
+        } 
+    } 
+}

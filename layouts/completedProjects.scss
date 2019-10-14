@@ -1,0 +1,175 @@
+.completed-projects{
+    height: 725px;
+    background-color: black;
+    
+    &_title{
+      @include textTitle();
+      letter-spacing: -0.07em;
+      @include textYellow();
+      padding: 36px 33.6% 22px 32.5%;
+      width: 33.3%;
+    }
+    &_description{
+      font-family: FuturaBookC;
+      font-size: 14px;
+      line-height: 158.48%;
+      /* or 22px */
+      width:83%;
+      text-align: center;
+      padding: 0 8.5% 35px 8.5%;
+      color: #FFFFFF;
+    }
+    &_img{
+        @include centrPicture();
+    }
+    &_arrow{
+        position: absolute;
+        top: 860px;
+        left: 8.5%;   
+    }
+    &_arrow_2{
+      position: absolute;
+      top: 860px;
+      right: 8.5%;
+    }
+    &_columns{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+     .finished-work{
+         width: 24.6%;
+         padding: 0 16% 7.4% 8.5%;
+          h2{
+              font-family: Yeseva One;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 14px;
+              line-height: 138.6%;
+              /* identical to box height, or 19px */
+              text-transform: uppercase;
+              color: #E3B873;
+
+          }
+          h3{
+              font-family: FuturaBookC;
+              font-size: 14px;
+              line-height: 19px;
+              color: #FFFFFF;
+
+          }
+     }   
+     &_names{
+         display: none;
+     }
+     
+    }
+    &_slider{
+      display: none;
+      }
+      &_paginator{
+          display: none;
+      }
+    @media screen and (min-width : 800px){
+      height: 750px;
+      position: relative;
+      &_names{
+          text-transform: uppercase;
+          color: rgba(255, 255, 255, 0.3);
+         font-size: 14px;
+         line-height: 19px; 
+         position: absolute;
+         font-family: Yeseva One;
+         top: 107px;
+         right: 15.6vw;
+         width:43.4vw;
+         ul{
+             display: flex;
+             
+         }
+         li{
+             margin-right: 4vw;
+         }
+         li:hover{
+             color: $yellowish;
+         }
+      }
+      &_slider{
+          width: 60.7vw;
+          display: flex;
+          overflow: hidden;
+          position: absolute;
+          top: 165px;
+          left: 38vw;
+          transition: transform 700ms linear;
+          
+          &__img{
+          height: 679px;
+          min-width: 51vw;
+          }
+          &__img2{
+          width: 47vw;
+          height: 584px;
+          }
+      }
+      .first-position{
+         transform: translate3d(0px, 0px, 0px);
+      }
+      .second-position{
+          
+          transform: translate3d(-47vh, 0px, 0px);
+      }
+      &_title{
+        padding: 176px 16.6vw 34px 7vw;
+        width: 17.5vw;
+        font-size: 27px;
+        line-height: 37px;
+      }
+      &_description{
+        font-family: FuturaBookC;
+        font-size: 18px;
+        width: 30vw;
+        text-align: left;
+        padding: 0 3.5vw 42px 7vw;
+      }
+      &_img{
+          display: none;
+      }
+      &_arrow{
+          display:none;  
+      }
+      &_arrow_2{
+        position: absolute;
+        top: 426px;
+        right: 3vw;
+        z-index: 1;
+        height: 55px;
+        width: 3vw;
+      }
+      &_columns{
+          width: 38vw;
+       .finished-work{
+           display: flex;
+           flex-wrap: wrap;
+           width: 9vw;
+           padding: 0 0 47px 7vw;
+            h2{
+               font-size: 18px;
+                line-height: 138.6%;
+            }
+            h3{
+                font-size: 15px;
+                line-height: 20px;
+            }
+       }   
+      }
+      &_paginator{
+          position: absolute;
+          top: 640px;
+          left: 8vw;
+          width: 15vw;
+          height: 13px;
+          display: block;
+      }
+    }
+
+  }

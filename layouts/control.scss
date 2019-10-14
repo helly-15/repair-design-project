@@ -1,0 +1,45 @@
+.control{
+    height: 540px;
+    background-color: black;
+    display: block;
+    &_title{
+        @include textTitle();
+        color: #FFFFFF;
+    }
+    &_camera{
+        @include icons();
+        padding: 20px 45% 40px 45%;
+    }
+    &_article{
+        font-family: FuturaBookC;
+        font-size: 14px;
+        line-height: 169.8%;
+        /* or 24px */
+        text-align: center;
+        color: #FFFFFF;
+        padding: 0 4.5% 0 4.5%;
+    }
+    iframe{
+        width: 90%;
+         height: 207px;
+         padding: 0 4.5% 50px 4.5%;
+         
+    }
+    @media screen and (min-width : 800px){
+    height: 915px;
+    background: linear-gradient(180deg, black 50%, white 50%);
+    &_title{
+        padding-top: 90px;
+    }
+    &_article{
+        font-size: 20px;
+        padding: 98px 26.3vw 0 26.3vw;
+        color: black;
+    }
+    iframe{
+        width: 56.7vw;
+        height: 434px;
+        padding: 20px 21% 0 21%;
+    }
+    } 
+}

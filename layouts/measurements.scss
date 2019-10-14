@@ -1,0 +1,111 @@
+.measurements{
+    display: none;
+    @media screen and (min-width : 800px){
+        display: flex;
+        position: relative;
+
+        &_house{
+            width: 30vw;
+            height: 700px;
+            background-image: url(assets/house.png);
+            background-size: cover;
+        }
+        &_house-circle{
+            width: 35vw;
+            height: 700px;
+            border-radius: 50%;
+            background-image: linear-gradient(to right, transparent 0%, transparent 20%, transparent 20%, $yellowish 100%);
+            mask-image: radial-gradient(circle at center, transparent 70%, white 68%);
+            position:absolute;
+        }
+        &_list{
+            font-family: FuturaDemic;
+            font-size: 18px;
+            line-height: 21px;
+            position: absolute;
+            &_01{
+                position: absolute;
+                top: 117px;
+                left: 33vw;
+                width: 25vw;
+            }
+            &_02{
+                position: absolute;
+                top: 238px;
+                left: 36vw;
+                width: 7vw;
+            }
+            &_03{
+                position: absolute;
+                top: 400px;
+                left: 36vw;
+                width: 7vw;
+            }
+            
+
+        }
+
+        &_form{
+            height: 510px;
+            width: 35vw;
+            background: black;
+            display: flex;
+            flex-direction: column;
+            font-family: FuturaBookC;
+            font-size: 20px;
+            line-height: 25px;
+            color: #FFFFFF;
+            margin-left: 24.2vw;
+            margin-top: 100px;
+            text-align: center;
+            padding-top: 28px;
+            
+            :nth-child(3){
+                padding-top: 0; 
+            }
+            &_label{
+                margin-left: 4.5%;
+                font-family: FuturaBookC;
+                font-size: 15px;
+                line-height: 20px;
+                color: rgba(255, 255, 255, 0.5);
+                text-align: left;
+                padding-top: 39px;
+                
+            }
+            
+            &_input{
+                width: 90%;
+                box-sizing: border-box;
+                border: none;
+                background-color: black;
+                border-bottom: 2px solid white;
+                margin-left: 4.5%;
+                color:white;
+                font-family: FuturaBookC;
+                font-size: 18px;
+                line-height: 138.72%;
+                
+            }
+            &_checkbox{
+               padding-left: 4.5%;
+               text-align: left;
+               padding-top: 50px;
+            }
+            &_button{
+                display: block;
+                width: 14vw;
+                height: 50px;
+                background-color: $yellowish;
+                margin-left: 19vw;
+                font-family: FuturaDemiC;
+                font-size: 13px;
+                line-height: 15px;
+                @include textWhite();
+                margin-top: 50px;
+            
+            }
+        }
+
+    }
+}

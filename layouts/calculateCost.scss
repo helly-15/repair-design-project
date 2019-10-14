@@ -1,0 +1,129 @@
+.calculate-cost{
+    height: 476px;
+    background-color: black;
+    width: 100%;
+    position: relative;
+    
+
+    &_title{
+      position: absolute;
+      top:17.9%;
+      left:4.8%;    
+      @include textTitle();
+      color: white;
+      span{ 
+          color: $yellowish};
+      }
+      &_img{
+          display: block;
+          margin: 0 auto;
+          width: 100%;
+          height: 476px;
+          object-fit: cover;
+      }
+      &_img_gray{
+          opacity: 0.7 ;
+          position: absolute;
+          top: 0%;
+          left    : 0%;
+          margin: 0 auto;
+          width: 100%;
+          height: 476px;
+          object-fit: cover;
+          
+      }
+      &_img_big{
+          display: none;
+      }
+      &_text{
+          position: absolute;
+          left: 4.8%;
+          top: 33.7%;
+          font-family: FuturaBookC;
+          font-size: 1.123em;
+          line-height: 135.84%;
+          /* or 24px */
+          color: #FFFFFF;
+          width: 59%;
+      }
+      &_button{
+          width: 90%;
+          height: 51px;
+          background-color: $yellowish;
+          position: absolute;
+          top: 62.4%;
+          left: 5%;
+          font-family: FuturaDemiC;
+          font-size: 13px;
+          line-height: 15px;
+          @include textWhite();
+      }
+      &_application{
+          width: 90%;
+          height: 51px;
+          font-family: FuturaDemiC;
+          font-size: 13px;
+          line-height: 15px;
+          @include textWhite();
+          border: 1px solid #FFFFFF;
+          box-sizing: border-box;
+          background-color: rgba(0, 0, 0, 0);
+          position: absolute;
+          top: 364px;
+          left: 5%;
+      }
+      @media screen and (min-width : 800px){
+          height: 707px;
+    
+          &_title{
+            position: absolute;
+            top:194px;
+            left:9.7vw;    
+            font-size: 40px;
+            line-height: 53px;
+            }
+            &_img{
+                display: none;
+            }
+            &_img_big{
+              display: block;
+              margin-left: 5.7%;
+              width: 94.3%;
+              height: 707px;
+              object-fit: cover;
+
+          }
+            &_img_gray{
+                height: 707px;
+                margin-left: 5.7%;
+              width: 94.3%;
+            }
+            &_text{
+                left: 9.8%;
+                top: 318px;
+                font-size: 22px;
+                line-height: 30px;
+                width: 35%;
+            }
+            &_button{
+                width: 14vw;
+                top: 62.4%;
+                left: 10%;
+            }
+            &_application{
+              width: 14vw;
+              top: 62.4%;
+              left: 25.6%;
+            } 
+            &_instagram{
+                transform: rotate(90deg);
+                @include textYellow;
+                font-family: FuturaBookC;
+                font-size: 14px;
+                position: absolute;
+                top: 284px;
+                
+            }
+      }
+    
+}

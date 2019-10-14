@@ -1,0 +1,131 @@
+.examples{
+    background: #FFFFFF;
+    height: 1730px;
+    display: block;
+
+    &_title{
+        margin-top: 57px;
+        @include textTitle();
+        color: #181818;
+    }
+    &_hammer{
+        @include icons();
+        padding-top: 17px;
+           
+    }
+    &_block-of-pictures{
+        display: flex;
+        flex-direction: column;
+    
+    }
+    &_pic{
+        height: 485px;
+        width: 90%;
+        position: relative;
+        padding-top: 60px;
+    }
+    &_picture{
+        height: 365px;
+        margin: 0 4.6%;
+        width: 100%;
+        
+    }
+    
+    &_details{
+        padding-left: 8%;
+        position: absolute;
+        height: 241px;
+        top:220px;
+        left: 4.6%;
+        background: #FFFFFF;
+        background-color: white;
+        height: 240px;
+        width: 72%;
+        font-family: FuturaBookC;
+        font-size: 13px;
+        line-height: 169.8%;
+        /* or 22px */
+        color: #959595;
+        li{
+            list-style-type: circle;
+        }
+        h3{
+            font-family: Yeseva One;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 15px;
+            line-height: 138.6%;
+            /* identical to box height, or 21px */
+            color: #363636;
+            padding-top: 21px;
+            padding-bottom: 10px;
+        }
+    }
+    &_price{
+        position: absolute;
+        bottom: 8%;
+        left: 4.6%;
+        width: 50%;
+        background-color: #E3B873;
+        font-family: Yeseva One;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 138.6%;
+        /* or 21px */
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin-top: 17px;
+        height: 40px;
+        align-content: center;
+        padding-top: 14px;
+        padding-left: 10%;
+    }
+    @media screen and (min-width : 800px){
+        height: 830px;
+        
+        &_block-of-pictures{
+            display: flex;
+            flex-direction: row;
+            margin-left: 4.8vw;
+        }
+        &_pic{
+            height: 608px;
+            width: 27vw;
+            position: relative;
+            padding-top: 60px;
+            padding-left: 2vw;
+        }
+        &_picture{
+            height: 421px;
+            margin: 0 2vw 0 0;
+            width: 100%;
+            
+        }
+        
+        &_details{
+            padding-left: 8%;
+            position: absolute;
+            height: 286px;
+            top: 294px;
+            width: 23vw;
+            font-size: 15px;
+            
+           
+            h3{
+                font-size: 18px;
+                padding-top: 25px;
+                
+            }
+        }
+        &_price{
+            
+            width: 15.8vw;
+            font-size: 18px;
+            margin-top: 0px;
+            height: 54px;
+            padding-top: 17px;
+            padding-left: 1.5vw;
+        }
+    }
+}
