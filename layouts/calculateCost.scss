@@ -7,6 +7,9 @@
         display: none;
         
     }
+    &_scroll{
+        display: none;
+    }
     
 
     &_title{
@@ -79,8 +82,33 @@
           cursor: pointer;
       }
       @media screen and (min-width : 800px){
-          height: 707px;
-    
+          height: 740px;
+          &_scroll{
+            display: flex;
+            position: absolute;
+            width: 17vw;
+            height: 100px;
+            background-color: black;
+            top: 660px;
+            left: 0;
+            font-family: Yeseva One;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+             line-height: 100px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            text-align: center;
+            vertical-align: middle;
+            padding-left: 1vw;
+            &_arrow{
+                padding-left: 1vw;
+            }
+            &_text{
+                padding-left: 3vw;
+            }
+            
+        }
           &_title{
             position: absolute;
             top:194px;

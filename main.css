@@ -132,6 +132,10 @@
   display: none;
 }
 
+.calculate-cost_scroll {
+  display: none;
+}
+
 .calculate-cost_title {
   position: absolute;
   top: 17.9%;
@@ -225,7 +229,34 @@
 
 @media screen and (min-width: 800px) {
   .calculate-cost {
-    height: 707px;
+    height: 740px;
+  }
+  .calculate-cost_scroll {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    width: 17vw;
+    height: 100px;
+    background-color: black;
+    top: 660px;
+    left: 0;
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 100px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-align: center;
+    vertical-align: middle;
+    padding-left: 1vw;
+  }
+  .calculate-cost_scroll_arrow {
+    padding-left: 1vw;
+  }
+  .calculate-cost_scroll_text {
+    padding-left: 3vw;
   }
   .calculate-cost_title {
     position: absolute;
@@ -404,6 +435,7 @@
   }
   .completed-projects_names li:hover {
     color: #E3B873;
+    border-bottom: #E3B873 1px solid;
   }
   .completed-projects_slider {
     width: 60.7vw;
@@ -459,8 +491,9 @@
     top: 426px;
     right: 3vw;
     z-index: 1;
-    height: 55px;
+    height: 50px;
     width: 3vw;
+    cursor: pointer;
   }
   .completed-projects_columns {
     width: 38vw;
@@ -990,7 +1023,7 @@
   text-align: center;
   color: #E3B873;
   position: relative;
-  height: 378px;
+  height: 374px;
 }
 
 .fantasies_title {

@@ -53,6 +53,12 @@
                 application
 
             </button>
+            <a href="#">
+                <div class="calculate-cost_scroll">
+                    <h3 class="calculate-cost_scroll_text">scroll down  </h3>
+                    <img class="calculate-cost_scroll_arrow" src="./assets/arrow down.svg">    
+                </div>
+             </a>
         </section>
         <section class="completed-projects">
             <div class="completed-projects_names">
@@ -99,7 +105,7 @@
                     </h2>
                 </div>
             </div>
-            <img class="completed-projects_paginator" src="assets/paginator.png">
+            <a href="#"><img class="completed-projects_paginator" src="assets/paginator.png"> </a>
         </section>
         <section class="control">
             <div class="control_title">
@@ -115,12 +121,12 @@
         <section class="form">
             
             <label class="form_label label_1"> Name</label>
-            <input class="form_input" type="text" value="What is your name:">
+            <input class="form_input" type="text" value="What is your name:" required>
 
             <label class="form_label label_2">Number</label>
-            <input class="form_input" type="text" value="Your phone number:"><br><br>
+            <input class="form_input" type="text" value="Your phone number:" required><br><br>
             <div class="form_checkbox">
-                <input  type="checkbox"> I agree to the processing of personal data
+                <input  type="checkbox" required> I agree to the processing of personal data
             </div>
             
             
@@ -302,7 +308,7 @@
                     <h3 class="goal_description_16">1/6</h3>
                     <h3 class="goal_description_departure">Departure for measurements premises</h3>
                     <h3 class="goal_description_text">After your call, we go to you to consult and measure the premises of your apartment. During our meeting, you can ask absolutely any number of questions. An appraiser-appraiser leaves to measure the room. He will advise you on the issues of repair technology, apartment design, terms of repair of the apartment as a whole and its individual stages.</h3>
-                    <img class="goal_description_dots" src="./assets/dots.png">
+                   <a href="#"><img class="goal_description_dots" src="./assets/dots.png"> </a> 
                 </div>
                 <div class="goal_photoDescription">
                     <div class="goal_photoDescription_wrapper">
@@ -365,7 +371,7 @@
                 <input class="form_input" type="text" value="Your phone number:"><br><br>
                 <label class="form_label label_2">Question</label>
                 <input class="form_input" type="text" value="I want to know:"><br><br>
-                <div class="form_checkbox"id="checkbox1">
+                <div class="form_checkbox"id="checkbox1" required>
                     <input  type="checkbox" > I agree to the processing of personal data
                 </div>
                 <button class="questions_button"> 
@@ -373,6 +379,18 @@
                 </button>
             </div>
             </section>
+
+        <section class="contacts-bottom">
+            <h2 class="contacts-bottom_address">Rostov-on-Don, Nansen St., 239 Shopping Center Decorum </h2>
+            <a href="#" class="contacts-bottom_telephone">+7 (928) 768 32 29</a>
+        </section>
+        <section class="insta">
+            <a href="#"> 
+                <img src="assets/Group 2.svg"  class="insta_icon">
+            </a>
+            
+        </section>
+
             <section class="map">
                 <img class="map_img" src="assets/map.png" >
             </section>
@@ -380,16 +398,30 @@
 
 
     </main>
-    <footer>
-        <section class="contacts-bottom">
-            <h2 class="contacts-bottom_address">Rostov-on-Don, Nansen St., 239 Shopping Center Decorum </h2>
-            <a href="#" class="contacts-bottom_telephone">+7 (928) 768 32 29</a>
-        </section>
-        <section class="insta">
-            <img src="assets/Group 2.svg"  class="insta_icon">
+    <footer class="header">
+        
+            <section class="header_logo"><h1>IC "Repair Design Project"</h1>
             
-        </section>
-
+            </section>
+            <nav class="header_navbar">
+                <ul>
+                    <a href="#"><li>home</li></a> 
+                    <a href="#"><li>projects</li></a> 
+                    <a href="#"><li>measurment</li></a> 
+                    <a href="#"> <li>team</li></a> 
+                    <a href="#"><li>reviews</li></a> 
+                    <a href="#"><li>contacts</li></a> 
+                </ul>
+    
+            </nav>
+            <div class="header_telephone">
+                <a href="#">+7 (928) 768-32-39 </a> 
+            </div>
+            <button class="header_button">
+                <a href="#">  request a call</a>
+    
+            </button>
+    
 
     </footer>
 

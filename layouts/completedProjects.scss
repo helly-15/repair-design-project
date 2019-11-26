@@ -91,6 +91,7 @@
          }
          li:hover{
              color: $yellowish;
+             border-bottom: $yellowish 1px solid;
          }
       }
       &_slider{
@@ -142,8 +143,9 @@
         top: 426px;
         right: 3vw;
         z-index: 1;
-        height: 55px;
+        height: 50px;
         width: 3vw;
+        cursor: pointer;
       }
       &_columns{
           width: 38vw;
