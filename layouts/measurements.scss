@@ -12,11 +12,13 @@
         }
         &_house-circle{
             width: 35vw;
-            height: 700px;
+            height: 600px;
             border-radius: 50%;
-            background-image: linear-gradient(to right, transparent 0%, transparent 20%, transparent 20%, $yellowish 100%);
-            mask-image: radial-gradient(circle at center, transparent 70%, white 68%);
+            background-image: linear-gradient(to right, transparent 20%,transparent 20%, transparent 20%, transparent 20%, $yellowish 100%);
+            mask-image: radial-gradient(circle at center, transparent 60%, white 90%);
             position:absolute;
+            top: 100px;
+            left: -50px;
         }
         &_list{
             font-family: FuturaDemic;
@@ -26,20 +28,26 @@
             &_01{
                 position: absolute;
                 top: 117px;
-                left: 33vw;
-                width: 25vw;
+                left: 25vw;
+                width: 30vw;
             }
             &_02{
                 position: absolute;
                 top: 238px;
-                left: 36vw;
+                left: 30vw;
                 width: 7vw;
             }
             &_03{
                 position: absolute;
                 top: 400px;
-                left: 36vw;
+                left: 32vw;
                 width: 7vw;
+            }
+            &_04{
+                position: absolute;
+                top: 550px;
+                left: 29vw;
+                width: 30vw; 
             }
             
 
@@ -55,7 +63,7 @@
             font-size: 20px;
             line-height: 25px;
             color: #FFFFFF;
-            margin-left: 24.2vw;
+            margin-left: 29vw;
             margin-top: 100px;
             text-align: center;
             padding-top: 28px;

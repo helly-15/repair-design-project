@@ -1,0 +1,112 @@
+.goal{
+    display: none;
+    @media screen and (min-width : 800px){
+        display: block;
+        height: 701px;
+        background-color: black;
+        position: relative;
+        &_name{
+            width: 12.3vw;
+            height: 100px;
+            padding-left: 6.7vw;
+            &_how{
+                font-family: FuturaDemiC;
+                font-size: 15px;
+                line-height: 21px;
+                text-transform: uppercase;
+                color: #FFFFFF;
+            }
+            &_steps{
+                font-family: Yeseva One;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 27px;
+                line-height: 37px;
+                text-transform: uppercase;
+                color: #E3B873;
+            }
+        }
+        &_description{
+            width: 22vw;
+            height: 337px;
+            padding-top: 92px;
+            padding-left: 6.7vw;
+            &_16{
+                font-family: Yeseva One;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 25px;
+                text-transform: uppercase;
+                color: #FFFFFF;
+            }
+            &_departure{
+                font-family: Yeseva One;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 15px;
+                line-height: 23px;
+                text-transform: uppercase;
+                color: #E3B873;
+                padding-top: 22px;
+            }
+            &_text{
+                font-family: FuturaBookC;
+                font-size: 15px;
+                line-height: 25px;
+                color: #FFFFFF;
+            }
+            &_dots{
+                padding-top: 60px;
+            }
+        }
+        &_photoDescription{
+            display: flex;
+            flex-wrap: wrap;
+            width: 53vw;
+            height: 178px;
+            position: absolute;
+            top: 60px;
+            left: 39vw;
+            
+
+            &_wrapper{
+              width:17vw;
+              height: 70px; 
+              
+              &_number{
+                font-family: FuturaBookC;
+                font-size: 18px;
+                line-height: 20px;
+                color: #FFFFFF;
+                border-bottom: 1px solid #E3B873;
+                width: 1.4vw;
+               
+              } 
+              &_text{ 
+                  padding-top: 17px;
+               font-family: FuturaBookC;
+                font-size: 15px;
+                line-height: 18px;
+                color: #FFFFFF;   
+              }
+            }
+
+        }
+        &_photo{
+            width: 53vw;
+            height: 375px;
+            position: absolute;
+            top: 282px;
+            left: 39vw; ;
+        }
+       
+    
+    
+    }
+
+
+
+
+
+}

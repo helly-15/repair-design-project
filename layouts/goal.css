@@ -1,0 +1,106 @@
+.goal {
+  display: none;
+}
+
+@media screen and (min-width: 800px) {
+  .goal {
+    display: block;
+    height: 701px;
+    background-color: black;
+    position: relative;
+  }
+  .goal_name {
+    width: 12.3vw;
+    height: 100px;
+    padding-left: 6.7vw;
+  }
+  .goal_name_how {
+    font-family: FuturaDemiC;
+    font-size: 15px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+  .goal_name_steps {
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 27px;
+    line-height: 37px;
+    text-transform: uppercase;
+    color: #E3B873;
+  }
+  .goal_description {
+    width: 22vw;
+    height: 337px;
+    padding-top: 92px;
+    padding-left: 6.7vw;
+  }
+  .goal_description_16 {
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+  .goal_description_departure {
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 23px;
+    text-transform: uppercase;
+    color: #E3B873;
+    padding-top: 22px;
+  }
+  .goal_description_text {
+    font-family: FuturaBookC;
+    font-size: 15px;
+    line-height: 25px;
+    color: #FFFFFF;
+  }
+  .goal_description_dots {
+    padding-top: 60px;
+  }
+  .goal_photoDescription {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 53vw;
+    height: 178px;
+    position: absolute;
+    top: 60px;
+    left: 39vw;
+  }
+  .goal_photoDescription_wrapper {
+    width: 17vw;
+    height: 70px;
+  }
+  .goal_photoDescription_wrapper_number {
+    font-family: FuturaBookC;
+    font-size: 18px;
+    line-height: 20px;
+    color: #FFFFFF;
+    border-bottom: 1px solid #E3B873;
+    width: 1.4vw;
+  }
+  .goal_photoDescription_wrapper_text {
+    padding-top: 17px;
+    font-family: FuturaBookC;
+    font-size: 15px;
+    line-height: 18px;
+    color: #FFFFFF;
+  }
+  .goal_photo {
+    width: 53vw;
+    height: 375px;
+    position: absolute;
+    top: 282px;
+    left: 39vw;
+  }
+}
+/*# sourceMappingURL=goal.css.map */

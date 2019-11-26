@@ -2,7 +2,7 @@
     @include textTitle();
     @include textYellow();
     position: relative;
-    height: 500px;
+    height: 378px;
     
     &_title{
         background-color: white;
@@ -75,7 +75,7 @@
             position: absolute;
             left: 0;
             top: 111px;
-            height: 664px;
+            height: 800px;
             width: 98vw;
         }
         &_grey{
@@ -83,7 +83,7 @@
             position: absolute;
             left: 0;
             top: 111px;
-            height: 664px;
+            height: 800px;
             width: 98vw;
             opacity: 0.9;
         }

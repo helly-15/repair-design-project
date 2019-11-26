@@ -89,7 +89,7 @@
     position: relative;
     flex-direction: row;
     flex-wrap: wrap;
-    height: 1035px;
+    height: 1050px;
     &_title{
         color: black;
         margin: 112px 41vw 24px 41vw ;
@@ -97,12 +97,13 @@
     }
     &_pen{
         padding-top: 0px;
-        margin: -40px 3vw 24px 0vw;
-    width: 2vw;
+        margin: -78px 0 0 0;
+        width: 2vw;
+        padding-left: 46vw;
     }
 
     &_article{
-        margin: -31px 23.5vw 0 28.5vw ;
+        margin: -100px 23.5vw 0 25vw ;
         padding-left: 0;
         padding-right: 0;
         color: black;
@@ -146,21 +147,22 @@
         align-content: center;
         padding-top: 14px;
         padding-left: 10%;
+        top: 479px;
         
     }
     .second{
             position: absolute;
-            top: 534px; 
+            top: 517px; 
         }
         .third{
             position: absolute;
-            top: 651px; 
+            top: 530px; 
         }
     .full{
-        height: 414px;
+        height: 300px;
     }
     .standart{
-        height: 300px;
+        height: 270px;
     }
     }
     

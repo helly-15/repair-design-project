@@ -7,8 +7,11 @@
     font-size: 16px;
     line-height: 22px;
     color: #FFFFFF;
+    padding-top: 10px;
+    top: 100px;
     :nth-child(3){
         padding-top: 40px; 
+        
     }
     
     
@@ -54,13 +57,15 @@
     }
     .label_1{
         position: absolute;
-        top:-9px;
+        top:5px;
         left: 33vw;
+        color: grey;
     }
     .label_2{
         position: absolute;
-        top:-48px;
+        top:-35px;
         left: 50vw;
+        color: grey;
     }
     &_label{
         margin-left: 0;
@@ -70,8 +75,8 @@
     &_input{
         width: 16.6vw;
         background-color: white;
-        border-bottom: 2px solid black;
-        margin-left: 0;
+        border-bottom: grey 1px solid;
+        margin-left: 10px;
         color:black;
         font-family: FuturaBookC;
         font-size: 18px;
@@ -81,8 +86,8 @@
     &_checkbox{
        padding-left: 0;
        position: absolute;
-       left: 40vw;
-       top: 175px;
+       left: 38vw;
+       top: 119px;
     }
     }
 }
